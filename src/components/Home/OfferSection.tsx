@@ -7,7 +7,13 @@ import { faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function OfferSection() {
   return (
-    <section className="spaec-60">
+    <section className="spaec-60 bg-pattern2">
+      <div className="offer-pattern">       
+        <img src="/images/pattern2.png" alt="" />
+      </div>
+      <div className="offer-pattern1">       
+        <img src="/images/pattern1.png" alt="" />
+      </div>
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12">
@@ -72,13 +78,15 @@ export default function OfferSection() {
           </div>
         </div>
         <div className="offertext">
-           <h3>Delicious Food, Fresh Ingredients, Crafted with Love, Satisfy Your Cravings!</h3>
+          <h3>
+            Delicious Food, Fresh Ingredients, Crafted with Love, Satisfy Your
+            Cravings!
+          </h3>
         </div>
         <div
           className="about-content-btn wow fadeInUp text-center1"
           data-wow-delay="0.6s"
         >
-         
           <Link href="/contact" className="button-first btn-main">
             Reserve Table! <FontAwesomeIcon icon={faArrowRight} />
           </Link>

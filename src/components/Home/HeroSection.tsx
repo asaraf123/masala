@@ -67,7 +67,7 @@ export default function HeroSection() {
         loop={true}
         parallax={true}
         autoplay={{
-          delay: 6000,
+          delay: 60000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}

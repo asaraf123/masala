@@ -45,7 +45,7 @@ useEffect(() => {
   }, [swiperInstance]);
 
   return (
-    <section className='spaec-60 bglight relative'>
+    <section className='spaec-60 bglight bg-pattern relative'>
       <div className='container-fluid'>
         <div className='row'>
           <div className='col-lg-12'>
@@ -88,18 +88,18 @@ useEffect(() => {
                           src={item.img}
                           alt={item.title}
                           width={240}
-                          height={260}
+                          height={285}
                         />
                       </div>
                       <div className='specialties-content'>
-                        <div className='about-us-pattern3'>
+                        {/* <div className='about-us-pattern3'>
                           <Image
                             src='/images/flower-path-one.png'
                             alt='About Us'
                             width={300}
                             height={300}
                           />
-                        </div>
+                        </div> */}
                         <div>
                           <h3>{item.title}</h3>
                           <p>{item.desc}</p>
@@ -166,18 +166,18 @@ useEffect(() => {
                           src={item.img}
                           alt={item.title}
                           width={240}
-                          height={260}
+                          height={285}
                         />
                       </div>
                       <div className='specialties-content'>
-                        <div className='about-us-pattern3'>
+                        {/* <div className='about-us-pattern3'>
                           <Image
                             src='/images/flower-path-one.png'
                             alt='About Us'
                             width={300}
                             height={300}
                           />
-                        </div>
+                        </div> */}
                         <div>
                           <h3>{item.title}</h3>
                           <p>{item.desc}</p>

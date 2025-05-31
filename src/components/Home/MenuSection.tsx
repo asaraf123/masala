@@ -65,7 +65,7 @@ export default function MenuSection() {
   ];
   const [activeTab, setActiveTab] = useState("tab-1");
   return (
-    <section className="spaec-60 bglight">
+    <section className="spaec-60 bg-pattern">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -173,7 +173,7 @@ export default function MenuSection() {
             </div>
           </div>
           <div className="about-content-btn wow fadeInUp text-center1" data-wow-delay="0.6s">
-          <Link href="/menu" className="button-first btn-main">
+          <Link href="/menu" className="button-first button-sec btn-main">
            view all menu <FontAwesomeIcon icon={faArrowRight} />
           </Link>
         </div>

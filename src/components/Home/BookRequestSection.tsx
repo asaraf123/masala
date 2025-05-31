@@ -208,7 +208,7 @@ export default function BookRequestSection() {
                           <div className='field-inner text-center'>
                             <button
                               type='submit'
-                              className='button-first btn-main'
+                              className='button-first button-sec btn-main'
                             >
                               book a table{' '}
                               <FontAwesomeIcon icon={faArrowRight} />
