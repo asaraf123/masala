@@ -65,7 +65,7 @@ export default function MenuSection() {
   ];
   const [activeTab, setActiveTab] = useState("tab-1");
   return (
-    <section className="spaec-60 bg-pattern">
+    <section className="spaec-60 bg-pattern3">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

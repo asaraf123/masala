@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
 
 :root {
   --background: #ffffff;
   --foreground: #da9b2c;
   --primary-color : #6a2216;
   --secondary-color : #da9b2c;
+  --font-merienda: 'Merienda', sans-serif;
+   --font-open-sans: 'Open Sans', sans-serif;
+  --font-caveat: 'Caveat', cursive;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #fee5bb;
     --foreground: #0a0a0a;
+  --font-merienda: 'Merienda', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-caveat: 'Caveat', cursive;
   }
 }
 
@@ -22,12 +28,22 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
-   font-family: "Jost", sans-serif;
+  background: #fffaed;
+    font-family: var(--font-open-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 1;
 }
-
+body:before {
+    content: "";
+    z-index: -1;
+    opacity: .1;
+    background-image: url(https://dpsample.com/wp_themes/restimo/coffee/wp-content/uploads/2024/08/leaves_pattern_010.png);
+    transition: all .5s;
+    position: absolute;
+    inset: 0;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -46,7 +62,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-     font-family: "Signika", sans-serif;
+    font-family: var(--font-merienda);
 }
 
 .main-menu{
@@ -156,7 +172,31 @@ h1, h2, h3, h4, h5, h6 {
 /* about sect */
 .about-us{
 	    position: relative;
-    background: #f9cc75;
+      background: #FFFAED;
+      z-index: 1;      
+}
+.about-us:before {
+    content: "";
+    z-index: -1;
+    opacity: .1;
+    background-image: url(https://dpsample.com/wp_themes/restimo/coffee/wp-content/uploads/2024/08/leaves_pattern_010.png);
+    transition: all .5s;
+    position: absolute;
+    inset: 0;
+}
+.bg-pattern3{
+     position: relative;
+      background: #fff4e6;
+      z-index: 1;    
+}
+.bg-pattern3:before {
+    content: "";
+    z-index: -1;
+    opacity: .1;
+    background-image: url(https://dpsample.com/wp_themes/restimo/coffee/wp-content/uploads/2024/08/leaves_pattern_010.png);
+    transition: all .5s;
+    position: absolute;
+    inset: 0;
 }
 .about-us-img img {
   animation: rotateImage 5s linear infinite; 
@@ -224,7 +264,7 @@ text-transform: capitalize;
 
 .about-content-btn{
 	display: flex;
-	gap: 30px;
+	gap: 20px;
 	flex-wrap: wrap;
 	margin-top: 40px;
 }
@@ -268,20 +308,21 @@ text-transform: capitalize;
   margin-top: 25px;
 }
 .button-first{
-  text-transform: capitalize;
-    background: #6a2216;
     color: #fff;
     z-index: 1;
+    background: #6a2216;
     border: none;
-    border-radius: 30px;
-    padding: 14px 20px;
-    font-size: 15px;
-    font-weight: 700;
+    border-radius: 3px;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 1em;
     transition: all .5s ease-in-out;
     display: inline-block;
     position: relative;
     overflow: hidden;
+    text-transform: uppercase;
+    font-style: italic;
 }
 .button-first:hover{
   color: var(--primary-color);
@@ -314,32 +355,32 @@ text-transform: capitalize;
 }
 
 .button-second{
-    text-transform: capitalize;
+   text-transform: uppercase;
     color: #6a2216;
     z-index: 1;
     background: #fff;
     border: none;
-    border-radius: 30px;
-    padding: 14px 20px;
-    font-size: 15px;
-    font-weight: 700;
+    border-radius: 3px;
+    padding: 18px 18px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 1em;
     transition: all .5s ease-in-out;
     display: inline-block;
     position: relative;
     overflow: hidden;
+    font-style: italic;
 }
 
 .button-second.btn-main::before {    
     background: #6a2216; 
 }
 .section-title h2 {
-color: #6a2216;
-    letter-spacing: 1px;
+    color: #320d07;
     padding-bottom: 15px;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 48px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 .section-title p{
   font-size: 16px;
@@ -777,7 +818,7 @@ position: relative;
      position: relative;
     padding: 0;
     text-align: center;
-    background: url(/images/pattern-2.png) 0 0 repeat;
+    background: url(https://dpsample.com/wp_themes/restimo/coffee/wp-content/uploads/2024/08/leaves_pattern_010.png) 0 0 repeat;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -880,21 +921,20 @@ position: relative;
 }
 
 .menu-tabs .buttons .tab-buttons .tab-btn {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
-    margin-left: 40px;
-    margin-right:40px;
-    font-size: 18px;
-    line-height: 25px;
+       vertical-align: middle;
     text-transform: uppercase;
-    padding-bottom: 5px;
     cursor: pointer;
-    color: #fff;
+    color: #320d07;
+    margin: 0px 40px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 25px;
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
 }
 .menu-tabs .buttons .tab-buttons .tab-btn.active-btn{
-  color: #f3c96e;
+color: #d08935;
 }
 .menu-tabs .buttons .tab-buttons .tab-btn:before {
     content: "";
@@ -903,8 +943,8 @@ position: relative;
     bottom: -3px;
     width: 100%;
     height: 5px;
-    border-top: 1px solid #f3c96e;
-    border-bottom: 1px solid #f3c96e;
+    border-top: 1px solid #d08935;
+    border-bottom: 1px solid #d08935;
     transform: scaleX(0);
     transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -1138,16 +1178,15 @@ position: relative;
   height: 10px;
 }
 footer{
-  background-image: url(/images/footer-bg.jpg);
+     z-index: 1;
+     background-color: #6a2216;
+    
     padding: 60px 0px 0px;
-    position: relative;
-    z-index: 1;
-    background-size: cover;}
+    position: relative;}
 footer::before{
  content: "";
     z-index: -1;
-    opacity: .9;
-    background: #6a2216;
+    background-image: url(https://dpsample.com/wp_themes/restimo/coffee/wp-content/uploads/2024/08/leaves_pattern_010.png);  
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1180,17 +1219,17 @@ footer::before{
 }
 .offertext{
      text-align: center;
-    padding-top: 20px;
-    max-width: 600px;
+    padding-top: 30px;
+    max-width: 800px;
     margin: auto;
 }
 .offertext h3{
-   color: #6a2216;
-    font-size: 26px;
+  color: #ce8b32;
+    font-size: 30px;
     font-style: italic;
     font-weight: 600;
-     font-family: "Cookie", cursive;
-     line-height: 1.6;
+    font-family: var(--font-merienda);
+    line-height: 1.6;
 }
 .specialties-box{
   display: flex;
@@ -1365,7 +1404,7 @@ footer::before{
     color: #fff;
     letter-spacing: 0px;
     font-size: 45px;
-    font-family: "Cookie", cursive;
+   font-family: var(--font-caveat);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -1417,7 +1456,7 @@ footer::before{
 .menu-ttile h3{
   letter-spacing: 0;
     color: #d89423;
-    font-family: Cookie, cursive;
+   font-family: var(--font-caveat);
     font-size: 32px;
     font-weight: 600;
 }
@@ -1716,32 +1755,32 @@ section{
   padding: 0px 60px;
 }
 .bg-pattern{
-     position: relative;
-    background: #6a2216;
+   background: #fff4e6;
+    position: relative;
+    z-index: 1;
 }
 .bg-pattern:before {
-    content: "";
+   content: "";
+    z-index: -1;
+    background-image: url(https://dpsample.com/wp_themes/restimo/food-delivery/wp-content/uploads/2024/09/bggg.png);
+    transition: all .5s;
     position: absolute;
-    left:0px;
-    right: 0px;   
-    top: 0;
-    bottom: 0;
-    transition: all .5s ease;   
-      background-image: url('/images/bg-pattern.png');
-      z-index: 1;
+    inset: 0;
+    opacity: 0.1;
      
 }
 .bg-pattern h2 {
-    color: #d8a033;  
+ 
 }
 .bg-pattern2{
-  background: #cd8834;
+  background: #fffaed;
   position: relative;
 }
 .offer-pattern{
   position: absolute;
   top: 0px;
   left: 0px;
+  opacity: 0.3;
 
 }
 .offer-pattern img{
@@ -1751,6 +1790,7 @@ section{
    position: absolute;
     bottom: 0px;
     right: 0px;
+    opacity: 0.3;
 
 }
 .offer-pattern1 img{}
@@ -1800,4 +1840,8 @@ section{
 }
 .menubg3 .menu-ttile h3 { 
    color: #6a2216;
+}
+.about-us .section-title h2 {  
+    font-size: 35px;  
+    line-height: 1.5;
 }
