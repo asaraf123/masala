@@ -1541,7 +1541,7 @@ object-fit: cover;
 .ser-content-col{
   display: flex;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
  
 }
 .ser-content-col-img{}
