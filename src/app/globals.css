@@ -1879,3 +1879,192 @@ section{
    background-image: url('/images/service-inner-bg4.jpg') !important;
    
 }
+@media screen and (max-width: 991px) {
+.about-us-image img{
+  width: 280px !important;
+  height: 280px !important;
+}
+.about-us-content {
+    padding: 0 0px;
+}
+.container-fluid {
+    padding: 0 20px;
+}
+.about-us .section-title h2 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+.btn-main {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.about-us-right-box {
+    grid-template-columns: 100%;  
+}
+.about-col-img img { 
+    object-fit: cover;
+}
+.section-title h2 {  
+    font-size: 28px;
+    line-height: 1.5;
+}
+.specialties-box {
+  flex-direction: column;
+}
+.specialties-img { 
+    border-radius: 25px 25px 0 0px;
+    width: 100%;
+}
+.specialties-content {  
+    border-radius: 0 0px 25px 25px;
+    width: 100%;
+}
+.slider-nav {   
+    position: relative;
+}
+.offertext h3 { 
+    font-size: 22px; 
+}
+.menu-tabs .menu-col .inner {   
+    padding-right: 0;
+      border-right: none;
+}
+.menu-tabs .menu-col:nth-child(2) .inner {
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+.quote-text{
+  font-size: 24px;
+}
+.reserv-col .title h2 { 
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+.reserv-col .inner { 
+    border-radius: 25px;
+    padding: 25px; 
+}
+.info-col {  
+    border-radius: 25px; 
+    margin-top: 25px;
+}
+.info-col .inner {   
+    padding: 25px;  
+}
+.why-block{
+  margin-bottom: 25px;
+}
+.menu-tabs .buttons .tab-buttons {
+   display: flex; 
+}
+
+.menu-tabs .buttons .tab-buttons {
+  display: flex;
+  gap: 1rem; /* equivalent to Tailwind's gap-4 */
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* for smooth scroll on iOS */
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-tabs .buttons .tab-buttons::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, etc. */
+}
+
+.menu-tabs .buttons .tab-buttons.tab-btn {
+  flex: 0 0 auto; /* prevent shrinking */
+}
+.menu-tabs .buttons .tab-buttons .tab-btn {  
+    margin: 0px 20px;  
+    font-size: 18px; 
+}
+.menu-tabs .dish-block .title h5 {  
+    font-size: 17px;
+}
+.herobanner-content h2 {
+    text-transform: none;
+    letter-spacing: 0;
+    color: #0a0a0a;
+    padding-top: 10px;
+    font-size: 35px;
+    line-height: 1.6;
+}
+.navbar-collapse{
+      position: absolute;
+    background: #ffe4c5;
+    top: 109px;
+    width: 100%;
+    left: 0px;
+}
+.navbar.scrolled .menurow .nav-link, .menurow .nav-link{
+    color: #222;
+}
+.navbar-toggler{
+      padding: 15px 20px;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+.about-content {
+    padding-right: 0;
+    padding-bottom: 39px;
+}
+.about-contentspace {
+    padding-left: 0;  
+    padding-top: 30px;
+}
+.about-content h2 { 
+    font-size: 28px;
+    line-height: 1.6;
+}
+.whybox {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cta-content h2 {
+    font-size: 28px;
+}
+.cta-btn {
+ flex-direction: column;
+}
+.main-title-section-wrapper {
+    height: 200px; 
+    padding: 50px 0 56px;
+}
+.main-title-section h1 {   
+    font-size: 30px;
+}
+.menuleft {   
+    margin-bottom: 25px;
+}
+.menucontainer {
+    padding: 0 0px;
+}
+.menu-page .row:nth-child(even){
+  flex-direction: column-reverse;
+}
+.menuleft-img img {
+     height: auto;
+}
+.ser-img img {   
+    width: 100%;
+    height: 400px !important;
+}
+.ser-img{
+  margin-bottom: 25px;
+}
+.ser-content-col {
+
+    flex-direction: column;
+}
+.ser-content-col-img img {
+    border-radius: 10px;
+    width: 100%;
+}
+.ser-content-col-img-con {
+    padding: 15px 0px 0px;
+}
+
+}

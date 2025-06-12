@@ -4,7 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
@@ -41,7 +44,7 @@ export default function Header() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span><FontAwesomeIcon icon={faBars} /></span>
             </button>
           </div>
 

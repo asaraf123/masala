@@ -30,7 +30,7 @@ export default function MenuPage() {
         </div>
         <div className="main-title-section-bg"></div>
       </section>
-      <section className="spaec-60">
+      <section className="spaec-60 menu-page">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6">
