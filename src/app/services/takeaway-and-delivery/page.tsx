@@ -15,7 +15,7 @@ import {
 export default function ServicesPageDetail() {
   return (
     <>
-      <section className="main-title-section-wrapper aligncenter">
+      <section className="main-title-section-wrapper serinner2-img  aligncenter">
         <div className="main-title-section-container">
           <div className="container">
             <div className="main-title-section">

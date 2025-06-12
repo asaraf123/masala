@@ -56,7 +56,10 @@ export default function Header() {
               <li className="nav-item">
                 <Link className={`nav-link ${isActive("/menu") ? "active" : ""}`} href="/menu">Menu</Link>
               </li>
-              <li className="nav-item dropdown">
+               <li className="nav-item">
+                <Link className={`nav-link ${isActive("/services") ? "active" : ""}`} href="/services">Services</Link>
+              </li>
+              {/* <li className="nav-item dropdown">
                 <a
                   className={`nav-link dropdown-toggle ${
                     pathname.startsWith("/service") ? "active" : ""
@@ -83,7 +86,7 @@ export default function Header() {
                     <Link className={`dropdown-item ${isActive("events-and-catering") ? "active" : ""}`} href="events-and-catering">Events &Catering</Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className={`nav-link ${isActive("/gallery") ? "active" : ""}`} href="/gallery">Gallery</Link>
               </li>

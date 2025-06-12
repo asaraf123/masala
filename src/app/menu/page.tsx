@@ -15,7 +15,7 @@ import {
 export default function MenuPage() {
   return (
     <>
-      <section className="main-title-section-wrapper aligncenter">
+      <section className="main-title-section-wrapper aligncenter menubg-img">
         <div className="main-title-section-container">
           <div className="container">
             <div className="main-title-section">

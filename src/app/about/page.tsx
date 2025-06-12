@@ -31,7 +31,7 @@ export default function AboutPage() {
   const slides = images.map((src) => ({ src }));
   return (
     <>
-      <section className="main-title-section-wrapper aligncenter">
+      <section className="main-title-section-wrapper aligncenter aboutbg-img">
         <div className="main-title-section-container">
           <div className="container">
             <div className="main-title-section">
@@ -47,7 +47,7 @@ export default function AboutPage() {
         <div className="main-title-section-bg"></div>
       </section>
       <section className="spaec-60">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="about-content">
@@ -65,6 +65,18 @@ export default function AboutPage() {
                   to share in this journey — where every bite is a memory, and
                   every meal a celebration.
                 </p>
+
+                <div
+                  className="about-content-btn wow fadeInUp"
+                  data-wow-delay="0.8s"
+                >
+                  <Link href="/menu" className="button-first btn-main">
+                    Reserve Table! <FontAwesomeIcon icon={faArrowRight} />
+                  </Link>
+                  <Link href="/services" className="button-second btn-main">
+                    Our Services <FontAwesomeIcon icon={faArrowRight} />
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="col-lg-6">
@@ -76,8 +88,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="spaec-60 bglight">
-        <div className="container-fluid">
+      <section className="spaec-60 bg-pattern">
+        <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="aboutimg">
@@ -110,7 +122,7 @@ export default function AboutPage() {
       </section>
 
       <section className="spaec-60">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="section-title">
@@ -151,8 +163,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="spaec-60 bglight">
-        <div className="container-fluid">
+      <section className="spaec-60 bg-pattern">
+        <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="section-title">
@@ -190,7 +202,7 @@ export default function AboutPage() {
       </section>
 
       <section className="spaec-60 cta-banner">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="cta-content">
@@ -200,7 +212,7 @@ export default function AboutPage() {
                     Reserve Table! <FontAwesomeIcon icon={faArrowRight} />
                   </Link>
                   <Link href="/menu" className="button-second btn-main">
-                   Explore the Menu <FontAwesomeIcon icon={faArrowRight} />
+                    Explore the Menu <FontAwesomeIcon icon={faArrowRight} />
                   </Link>
                   <Link href="/contact" className="button-first btn-main">
                     Contact Us <FontAwesomeIcon icon={faArrowRight} />

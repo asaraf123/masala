@@ -342,7 +342,7 @@ text-transform: capitalize;
     right: 0;
     width: 0;
     height: 106%;
-    background: #fff;
+    background: #d8a033;
     transform: skew(45deg);
     transition: all 0.4s ease-in-out;
     z-index: -1;
@@ -355,21 +355,21 @@ text-transform: capitalize;
 }
 
 .button-second{
-   text-transform: uppercase;
+      text-transform: uppercase;
     color: #6a2216;
     z-index: 1;
-    background: #fff;
+    background: #d8a033;
     border: none;
     border-radius: 3px;
-    padding: 18px 18px;
+    padding: 18px;
     font-size: 16px;
+    font-style: italic;
     font-weight: 600;
     line-height: 1em;
     transition: all .5s ease-in-out;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    font-style: italic;
 }
 
 .button-second.btn-main::before {    
@@ -1236,34 +1236,36 @@ footer::before{
 }
 /*  */
 .main-title-section-wrapper{
-      position: relative;
-    padding: 140px 0px 100px;
+   padding: 140px 0 100px;
+    position: relative;
+    height: 400px;
+    margin-top: 109px;
 }
 .main-title-section-container {
-     text-align: center;
+     text-align: start;
     margin: 0;
     width: 100%;
     }
 .main-title-section {   
     width: 100%;
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0;
     position: relative;
-      text-align: center;
+      text-align: start;
 }
 .main-title-section h1 {
-    color: #fff;
-    text-align: center;
+       color: #6a2216;
+    text-align: start;
     font-size: 50px;
 }
 .breadcrumb {
-        color: #fff;
-    text-align: center;
+        color: #222;
+    text-align: start;
     margin: auto;
     display: block;
 }
 .breadcrumb a {
-    color: #fff;
+    color: #222;
 }
 .breadcrumb span:not(.current) {
     display: inline-block;
@@ -1271,7 +1273,7 @@ footer::before{
     padding: 0;
 }
 .breadcrumb span.current {
-    color: #fff;
+       color: #6a2216;
 }
  .main-title-section-wrapper > .main-title-section-bg {
     background-image: url(https://brewhub.wpengine.com/wp-content/uploads/2025/02/brew-breadcrumb.jpg);
@@ -1294,7 +1296,7 @@ footer::before{
 }
 .main-title-section-wrapper .breadcrumb-default-delimiter:before {
     content: "";
-    background-color: #fff;
+    background-color: #222;
     display: inline-block;
     height: 14px;
     opacity: 1;
@@ -1306,7 +1308,7 @@ footer::before{
     transform: rotate(20deg);
 }
 .main-title-section-wrapper > .main-title-section-bg:after {
-          background-color: #1e1e1ec4;
+    
 }
 .addres-box{
      justify-content: inherit;
@@ -1844,4 +1846,36 @@ section{
 .about-us .section-title h2 {  
     font-size: 35px;  
     line-height: 1.5;
+}
+.aboutbg-img .main-title-section-bg{
+   background-image: url('/images/about-bg.jpg') !important;
+   
+}
+.menubg-img .main-title-section-bg{
+   background-image: url('/images/menu-bg.jpg') !important;
+   
+}
+.gallerybg-img .main-title-section-bg{
+   background-image: url('/images/gallery-bg.jpg') !important;
+   
+}
+.servicebg-img .main-title-section-bg{
+   background-image: url('/images/services-bg.jpg') !important;
+   
+}
+.serinner1-img .main-title-section-bg{
+   background-image: url('/images/service-inner-bg1.jpg') !important;
+   
+}
+.serinner2-img .main-title-section-bg{
+   background-image: url('/images/service-inner-bg2.jpg') !important;
+   
+}
+.serinner3-img .main-title-section-bg{
+   background-image: url('/images/service-inner-bg3.jpg') !important;
+   
+}
+.serinner4-img .main-title-section-bg{
+   background-image: url('/images/service-inner-bg4.jpg') !important;
+   
 }
