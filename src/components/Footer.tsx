@@ -25,15 +25,15 @@ export default function Footer() {
               <h3 className="ft-title">Contacts</h3>
               <ul>
                 <li>
-                  <FontAwesomeIcon icon={faLocationDot} /> 5 Rue Dalou, 75015 Paris
+                  <FontAwesomeIcon icon={faLocationDot} /> Friedbergstraße 38, 14057 Berlin, Germany
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faPhone} />{" "}
-                  <a href="tel:+33156788956">+33 1 56 78 89 56</a>
+                  <a href="tel:+49 30 48481787">+49 30 48481787</a>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faEnvelope} />{" "}
-                  <a href="mailto:test@mail.com">test@mail.com</a>
+                  <a href="mailto:info@masalaberlin.com">info@masalaberlin.com</a>
                 </li>
               </ul>
             </div>
@@ -70,13 +70,13 @@ export default function Footer() {
               <h3 className="ft-title">Working Hours</h3>
               <ul>
                 <li>
-                  <span>Mon – Fri:</span> 7.00am – 6.00pm
+                  <span>Mon – Thu:</span> 12.00 – 11.30pm
                 </li>
                 <li>
-                  <span>Sat:</span> 7.00am – 6.00pm
+                  <span>Fri - Sat:</span> 12.00 – 11.45pm
                 </li>
                 <li>
-                  <span>Sun:</span> 8.00am – 6.00pm
+                  <span>Sun:</span> 12.00 – 11.00pm
                 </li>
               </ul>
             </div>

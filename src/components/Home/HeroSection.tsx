@@ -22,12 +22,14 @@ export default function HeroSection() {
     {
       title: "Welcome to Masala Restaurant",
       desc: "Authentic Indian Cuisine in Berlin",
-      img: "/images/banner1.jpg",
+      img: "/images/homebanner1.jpg",
+      mimg: "/images/mobilebanner1.jpg",
     },
     {
       title: "Welcome to Masala Restaurant",
       desc: "Authentic Indian Cuisine in Berlin",
-      img: "/images/banner2.jpg",
+      img: "/images/homebanner.png",
+      mimg: "/images/mobilebanner2.jpg",
     },
     // Add more slides if needed
   ];
@@ -50,7 +52,9 @@ export default function HeroSection() {
       const desc = activeContent.querySelector(".desc");
       const buttons = activeContent.querySelector(".buttons");
 
-      const tl = gsap.timeline({ defaults: { duration: 1, ease: "power2.out" } });
+      const tl = gsap.timeline({
+        defaults: { duration: 1, ease: "power2.out" },
+      });
       tl.to(title, { autoAlpha: 1, yPercent: 0 })
         .to(desc, { autoAlpha: 1, yPercent: 0 }, "-=0.5")
         .to(buttons, { autoAlpha: 1, yPercent: 0 }, "-=0.5");
@@ -61,7 +65,7 @@ export default function HeroSection() {
     <section className="herobanner relative">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade, Parallax]}
-        effect="fade" // Use 'parallax' if needed, but 'fade' is smoother
+        effect="fade"
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
@@ -80,14 +84,11 @@ export default function HeroSection() {
       >
         {slides.map((item, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="banner-row"
-              style={{
-                backgroundImage: `url(${item.img})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
+            <div className="banner-row">
+              {/* Image tag instead of background */}
+              <img src={item.img} alt={item.title} className="banner-img" />
+               <img src={item.mimg} alt={item.title} className="mbanner-img" />
+
               <div className="container">
                 <div
                   className="herobanner-content-box"
@@ -106,7 +107,10 @@ export default function HeroSection() {
                       className="about-content-btn buttons"
                       data-swiper-parallax="-100"
                     >
-                      <Link href="/contact" className="button-first btn-main">
+                      <Link
+                        href="#reservation"
+                        className="button-first btn-main"
+                      >
                         Reserve Table! <FontAwesomeIcon icon={faArrowRight} />
                       </Link>
                       <Link href="/about" className="button-second btn-main">

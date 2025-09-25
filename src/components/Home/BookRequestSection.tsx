@@ -1,9 +1,10 @@
 'use client';
-import { useState } from 'react'; // ✅ Import useState
+
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -13,13 +14,13 @@ export default function BookRequestSection() {
       id: 1,
       title:
         'The best Indian food in Berlin! Everything from the biryani to the butter chicken is top-notch. Excellent service and beautiful ambiance.',
-      author: 'liya allen, manager',
+      author: 'Liya Allen, Manager',
     },
     {
       id: 2,
       title:
         'Masala’s tiffin service saved my weekdays! Tasty, fresh, and delivered on time.',
-      author: 'john doe, guest',
+      author: 'John Doe, Guest',
     },
   ];
 
@@ -36,11 +37,35 @@ export default function BookRequestSection() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log(formData);
-    // Optionally reset the form
-    // setFormData({ name: "", phone: "", persons: "1 Person", date: "", time: "08 : 00 am", message: "" });
+
+    try {
+      const res = await fetch('/api/sendMail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        alert('Booking request sent successfully!');
+        setFormData({
+          name: '',
+          phone: '',
+          persons: '1 Person',
+          date: '',
+          time: '08 : 00 am',
+          message: '',
+        });
+      } else {
+        alert(data.message || 'Something went wrong');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Error sending email');
+    }
   };
 
   return (
@@ -56,10 +81,7 @@ export default function BookRequestSection() {
                 spaceBetween={20}
                 slidesPerView={1}
                 loop={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
                 breakpoints={{
                   320: { slidesPerView: 1 },
                   768: { slidesPerView: 2 },
@@ -82,7 +104,7 @@ export default function BookRequestSection() {
       </section>
 
       {/* Booking Form Section */}
-      <section className='bookform'>
+      <section className='bookform' id='reservation'>
         <div className='container'>
           <div className='row bookrow'>
             <div className='col-lg-8 bookrow8'>
@@ -92,8 +114,8 @@ export default function BookRequestSection() {
                     <h2>Online Reservation</h2>
                     <div className='request-info'>
                       Booking request{' '}
-                      <a href='tel:+88123123456'>+88-123-123456</a> or fill out
-                      the order form
+                      <a href='tel:+49 30 48481787'>+49 30 48481787</a> or fill
+                      out the order form
                     </div>
                   </div>
 
@@ -210,7 +232,7 @@ export default function BookRequestSection() {
                               type='submit'
                               className='button-first button-sec btn-main'
                             >
-                              book a table{' '}
+                              Book a Table{' '}
                               <FontAwesomeIcon icon={faArrowRight} />
                             </button>
                           </div>
@@ -233,7 +255,7 @@ export default function BookRequestSection() {
                     <div className='booking-info'>
                       <div className='bk-title'>Booking request</div>
                       <div className='bk-no'>
-                        <a href='tel:+88-123-123456'>+88-123-123456</a>
+                        <a href='tel:+49 30 48481787'>+49 30 48481787</a>
                       </div>
                     </div>
 
@@ -245,19 +267,21 @@ export default function BookRequestSection() {
                       <li>
                         <strong>Location</strong>
                         <br />
-                        Restaurant St, Delicious City, London 9578, UK
+                        Friedbergstraße 38, 14057 Berlin, Germany
                       </li>
                       <li>
-                        <strong>Lunch Time</strong>
+                        <strong>Time</strong>
                         <br />
-                        Monday to Sunday <br />
-                        11.00 am - 2.30pm
+                        Monday to Thursday <br />
+                        12.00 - 11.30pm
                       </li>
                       <li>
-                        <strong>Dinner Time</strong>
-                        <br />
-                        Monday to Sunday <br />
-                        05.00 pm - 10.00pm
+                        Friday to Saturday <br />
+                        12.00 - 11.45pm
+                      </li>
+                      <li>
+                        Sunday <br />
+                        12.00 - 11.00pm
                       </li>
                     </ul>
                   </div>

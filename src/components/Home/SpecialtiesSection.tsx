@@ -66,19 +66,24 @@ useEffect(() => {
               >
                 {[
                   {
-                    title: 'Butter Chicken',
-                    desc: 'Tender chicken simmered in creamy tomato gravy, spiced perfectly with a hint of sweetness—a classic Indian favorite you’ll crave again and again!',
-                    img: '/images/butter-chicken.jpg',
+                    title: 'Mutton Korma',
+                    desc: 'Lamm mit Rahmkäse, Rosinen und Cashew in einer feinen Curry Sahne Soße',
+                    img: '/images/specialized/1.jpg',
                   },
                   {
-                    title: 'Mutton',
-                    desc: 'Tender, juicy cuts simmered in rich, spiced gravy, Slow-cooked to perfection for deep, bold flavor, A true delight for every meat lover’s soul.',
-                    img: '/images/butter-chicken.jpg',
+                    title: 'Paneer Tikka',
+                    desc: 'Indischer Rahmkäse, mariniert in einer Joghurtgewürzmischung mit Paprika und Zwiebeln im Tandooriofen gegrillt',
+                    img: '/images/specialized/2.jpg',
                   },
                   {
-                    title: 'Tandoori-Delikatessen',
-                    desc: 'Savor the smoky, flavorful magic of Tandoori Delikatessen—marinated meats grilled to perfection with authentic Indian spices for an unforgettable taste!',
-                    img: '/images/butter-chicken.jpg',
+                    title: 'Tandoori Chicken',
+                    desc: 'Hähnchenkeulen mariniert in Joghurt und Tandoori-Gewürzen, im Ofen knusprig gegrillt.',
+                    img: '/images/specialized/3.jpg',
+                  },
+                   {
+                    title: 'Chili Fisch',
+                    desc: 'Rotbarschfilet mit Paprika, Zwiebeln, Ingwer, Bambus und Knoblauch in scharfer Chilisauce.',
+                    img: '/images/specialized/4.jpg',
                   },
                 ].map((item, index) => (
                   <SwiperSlide key={index}>
@@ -87,8 +92,8 @@ useEffect(() => {
                         <Image
                           src={item.img}
                           alt={item.title}
-                          width={240}
-                          height={285}
+                          width={285}
+                          height={260}
                         />
                       </div>
                       <div className='specialties-content'>
@@ -144,19 +149,24 @@ useEffect(() => {
               >
                 {[
                   {
-                    title: 'Butter Chicken',
-                    desc: 'Tender chicken simmered in creamy tomato gravy, spiced perfectly with a hint of sweetness—a classic Indian favorite you’ll crave again and again!',
-                    img: '/images/butter-chicken.jpg',
+                    title: 'Paneer Pakoras',
+                    desc: '4 Stück hausgemachter Rahmkäse, paniert in Kichererbsenmehl und frittiert',
+                    img: '/images/specialized/5.jpg',
                   },
                   {
-                    title: 'Mutton',
-                    desc: 'Tender, juicy cuts simmered in rich, spiced gravy, Slow-cooked to perfection for deep, bold flavor, A true delight for every meat lover’s soul.',
-                    img: '/images/butter-chicken.jpg',
+                    title: 'Frühlingsrollen',
+                    desc: '4 goldbraun frittierte Frühlingsrollen mit exotisch gewürztem Gemüse',
+                    img: '/images/specialized/6.jpg',
                   },
                   {
-                    title: 'Tandoori-Delikatessen',
-                    desc: 'Savor the smoky, flavorful magic of Tandoori Delikatessen—marinated meats grilled to perfection with authentic Indian spices for an unforgettable taste!',
-                    img: '/images/butter-chicken.jpg',
+                    title: 'Palak Paneer',
+                    desc: 'Zarte Panirstücke in cremigen Spinat mit aromatischen Gewürzen.',
+                    img: '/images/specialized/7.jpg',
+                  },
+                   {
+                    title: 'Bhindi Masala',
+                    desc: 'Okraschoten mit Ingwer, Knoblauch in einer würzigen Tomaten- und Zwiebelsauce',
+                    img: '/images/specialized/8.jpg',
                   },
                 ].map((item, index) => (
                   <SwiperSlide key={index}>
@@ -165,8 +175,8 @@ useEffect(() => {
                         <Image
                           src={item.img}
                           alt={item.title}
-                          width={240}
-                          height={285}
+                          width={285}
+                          height={260}
                         />
                       </div>
                       <div className='specialties-content'>

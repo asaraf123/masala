@@ -28,52 +28,52 @@ export default function OfferSection() {
             <div className="offer-box">
               <div className="offer-image">
                 <Image
-                  src="/images/breakfast.jpg"
+                  src="/images/offer/1.jpg"
                   alt="About Us"
                   width={285}
                   height={336}
                 />
               </div>
-              <h3> Breakfast</h3>
+              <h3> SUPPEN</h3>
             </div>
           </div>
           <div className="col-lg-3 offer-box-space offer-mr">
             <div className="offer-box">
               <div className="offer-image">
                 <Image
-                  src="/images/lunch.jpg"
+                  src="/images/offer/2.jpg"
                   alt="About Us"
                   width={285}
                   height={336}
                 />
               </div>
-              <h3> Lunch</h3>
+              <h3> GEMISCHTE VORSPEISENPLATTE</h3>
             </div>
           </div>
           <div className="col-lg-3 offer-box-space ">
             <div className="offer-box">
               <div className="offer-image">
                 <Image
-                  src="/images/snacks.jpg"
+                  src="/images/offer/3.jpg"
                   alt="About Us"
                   width={285}
                   height={336}
                 />
               </div>
-              <h3> Snacks</h3>
+              <h3> INDISCHE BIRYANI’S</h3>
             </div>
           </div>
           <div className="col-lg-3 offer-box-space offer-mr">
             <div className="offer-box">
               <div className="offer-image">
                 <Image
-                  src="/images/dinner.jpg"
+                  src="/images/offer/4.jpg"
                   alt="About Us"
                   width={285}
                   height={336}
                 />
               </div>
-              <h3> Dinner</h3>
+              <h3> KAFFEE / TEE</h3>
             </div>
           </div>
         </div>

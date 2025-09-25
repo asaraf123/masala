@@ -86,7 +86,7 @@ export default function AboutSection() {
                 className='about-content-btn wow fadeInUp'
                 data-wow-delay='0.8s'
               >
-                <Link href='/contact' className='button-first btn-main'>
+                <Link href="#reservation" className='button-first btn-main'>
                   Reserve Table! <FontAwesomeIcon icon={faArrowRight} />
                 </Link>
                 <Link href='/about' className='button-second btn-main'>

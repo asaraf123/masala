@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${merienda.variable} ${openSans.variable} ${caveat.variable}`}>
+      <body className={`${merienda.variable} ${openSans.variable} ${caveat.variable}`}  id="bodyspace">
         <Header />
         {children}
         <Footer />
