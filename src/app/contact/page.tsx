@@ -149,7 +149,7 @@ export default function AboutPage() {
                   </div>
 
                   <div className="contact-sect-main">
-                    <h3>For Enquiry </h3>
+                    <h3>For Enquiry  </h3>
                     <ul>
                       <li>
                         <FontAwesomeIcon icon={faPhone} /> +49 30 66636806
