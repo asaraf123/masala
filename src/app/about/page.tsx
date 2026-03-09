@@ -22,7 +22,7 @@ export default function AboutPage() {
     "/images/gallery-img3.jpg",
     "/images/gallery-img4.jpg",
     "/images/gallery-img1.jpg",
-    "/images/gallery-img2.jpg",
+    "/images/gallery-img6.jpg",
   ];
 
   const [open, setOpen] = useState(false);
@@ -93,7 +93,7 @@ export default function AboutPage() {
           <div className="row">
             <div className="col-lg-6">
               <div className="aboutimg">
-                <img src="/images/aboutimg.webp" alt="" />
+                <img src="/images/aboutimg1.webp" alt="" />
               </div>
             </div>
             <div className="col-lg-6">

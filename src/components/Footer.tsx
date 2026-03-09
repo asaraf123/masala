@@ -25,11 +25,11 @@ export default function Footer() {
               <h3 className="ft-title">Contacts</h3>
               <ul>
                 <li>
-                  <FontAwesomeIcon icon={faLocationDot} /> Friedbergstraße 38, 14057 Berlin, Germany
+                  <FontAwesomeIcon icon={faLocationDot} /> Slabystraße 25, 12459 Berlin, Germany
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faPhone} />{" "}
-                  <a href="tel:+49 30 48481787">+49 30 48481787</a>
+                  <a href="tel:+49 30 66636806">+49 30 66636806</a>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faEnvelope} />{" "}
@@ -51,7 +51,7 @@ export default function Footer() {
                 <Link href="https://facebook.com" target="_blank">
                   <FontAwesomeIcon icon={faFacebook} />
                 </Link>
-                <Link href="https://instagram.com" target="_blank">
+                <Link href="https://www.instagram.com/masala_oberschoeneweide/" target="_blank">
                   <FontAwesomeIcon icon={faInstagram} />
                 </Link>
                 <Link href="https://youtube.com" target="_blank">

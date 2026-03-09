@@ -10,7 +10,7 @@ export default function GalleryPage() {
     '/images/gallery-img3.jpg',
     '/images/gallery-img4.jpg',
     '/images/gallery-img1.jpg',
-    '/images/gallery-img2.jpg',
+    '/images/gallery-img6.jpg',
   ];
 
   const [open, setOpen] = useState(false);

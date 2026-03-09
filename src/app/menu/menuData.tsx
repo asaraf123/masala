@@ -41,7 +41,7 @@ export const menuData = [
       },
       {
         name: "Chicken Salat",
-        description: "Würziger Salat mit Hühnerbrustfiletstreifen, mit Eisbergsalat, Paprika, Gurken, Tomaten und Zwiebeln",
+        description: "würziger Salat mit Hühnerbrustfiletstreifen, mit Eisbergsalat, Paprika, Gurken, Tomaten und Zwiebeln, mit Hausdressing",
         price: "10,90 €",
       },
     ],
@@ -63,20 +63,20 @@ export const menuData = [
       price: "5,90 €",
     },
     {
-      name: "Samosa Chaat",
+      name: "Samosa",
       description: "zwei Teigtaschen, gefüllt mit Kartoffeln und Erbsen, dazu Channa Chaat mit Zwiebeln",
-      price: "9,90 €",
+      price: "6,90 €",
     },
     {
       name: "Gobi Pakoras",
       description: "Blumenkohl, paniert in Kichererbsenmehl und frittiert",
       price: "5,90 €",
     },
-    {
-      name: "Chicken Pakoras",
-      description: "Hähnchen, paniert in Kichererbsenmehl und frittiert",
-      price: "6,90 €",
-    },
+    // {
+    //   name: "Chicken Pakoras",
+    //   description: "Hähnchen, paniert in Kichererbsenmehl und frittiert",
+    //   price: "6,90 €",
+    // },
   ],
 },
   {
@@ -97,7 +97,7 @@ export const menuData = [
       },
       {
         name: "Chicken Satay",
-        description: "2x Hähnchenspieße mariniert mit thailändischen Kräutern",
+        description: "2x Hähnchenspieße, mariniert in thailändischen Kräutern, Gewürzen und Kokosmilch",
         price: "6,90 €",
       },
     ],
@@ -111,15 +111,15 @@ export const menuData = [
     {
       name: "Für 2 Personen",
       description:
-        "4x Onion Bhaji, 2x Paneer Pakora, 2x Frühlingsrollen, 2x Won-Tan, 2x Chicken Satay",
-      price: "12,90 €",
+        "6x Onion Bhaji, 2x Paneer Pakora, 2x Frühlingsrollen, 2x Won-Tan, 2x Chicken Satay, Dips Trio",
+      price: "14,90 €",
     },
-    {
-      name: "Für 4 Personen",
-      description:
-        "8x Onion Bhaji, 4x Paneer Pakora, 4x Frühlingsrollen, 4x Won-Tan, 4x Chicken Satay",
-      price: "21,90 €",
-    },
+    // {
+    //   name: "Für 4 Personen",
+    //   description:
+    //     "8x Onion Bhaji, 4x Paneer Pakora, 4x Frühlingsrollen, 4x Won-Tan, 4x Chicken Satay",
+    //   price: "21,90 €",
+    // },
   ],
 },
 {
@@ -175,6 +175,11 @@ export const menuData = [
       name: "Channa Masala",
       description: "Zarte Kichererbsen, langsam gekocht in einer würzigen Tomaten- und Zwiebelsauce mit einer kühnen Mischung aus indischen Gewürzen",
       price: "11,90 €",
+    },
+    {
+      name: "Tofu Tikka Masala",
+      description: "Tofu zubereitet in einer Gewürzmischung mit Paprika und Zwiebeln",
+      price: "15,90 €",
     },
   ],
 },
@@ -395,6 +400,11 @@ export const menuData = [
       description: "Knuspriges Entenbrustfilet, gebraten mit Paprika, Ingwer, Knoblauch, Zwiebeln, Bambus in Chilisoße, scharf zubereitet",
       price: "14,90 €",
     },
+    {
+      name: "Shahi Duck",
+      description: "knuspriges Entenbrustfilet, mit Rosinen und Cashewnüssen in einer Curry Sahne Käse Soße mild zubereitet, garniert mit Mandeln",
+      price: "14,90 €",
+    },
   ],
 },
 {
@@ -512,6 +522,41 @@ export const menuData = [
       description: "",
       price: "2,50 €",
     },
+    {
+      name: "Mango Dip",
+      description: "",
+      price: "2,00 €",
+    },
+    {
+      name: "Joghurt Minz Dip",
+      description: "",
+      price: "2,00 €",
+    },
+    {
+      name: "Sweet Chili Dip",
+      description: "",
+      price: "2,00 €",
+    },
+     {
+      name: "Tamarind Dip",
+      description: "",
+      price: "2,00 €",
+    },
+         {
+      name: "Kokosnuss Chutney ",
+      description: "",
+      price: "3,50 €",
+    },
+       {
+      name: "Ketchup",
+      description: "",
+      price: "1,00 €",
+    },
+       {
+      name: "Mayo",
+      description: "",
+      price: "1,00 €",
+    },
   ],
 },
 {
@@ -549,10 +594,11 @@ export const menuData = [
       price: "7,50 €",
     },
     {
-      name: "Indisches Eis",
-      description: "Mango-, Kokos- oder Vanilleeis",
-      price: "7,90 €",
+      name: "Indisches Eis + mit Sahne",
+      description: "Wähle zwischen Mango-, Kokos- oder Vanilleeis",
+      price: "6,90 € + 7,90 €",
     },
+    
   ],
 },
 {
