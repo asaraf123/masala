@@ -11,7 +11,7 @@ import {
   faFacebook,
   faInstagram,
   faYoutube,
-  faTwitter,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons"; 
 
 export default function Footer() {
@@ -58,7 +58,8 @@ export default function Footer() {
                   <FontAwesomeIcon icon={faYoutube} />
                 </Link>
                 <Link href="https://twitter.com" target="_blank">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  
+                  <FontAwesomeIcon icon={faTiktok} />
                 </Link>
               </div>
             </div>
