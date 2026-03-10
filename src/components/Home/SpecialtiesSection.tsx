@@ -17,32 +17,45 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export default function SpecialtiesSection() {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
 
-  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
+  // Slider 1 refs
+  const prevRef1 = useRef(null);
+  const nextRef1 = useRef(null);
 
-useEffect(() => {
-    if (swiperInstance && prevRef.current && nextRef.current) {
-      // Clean up existing navigation
-      if (swiperInstance.navigation) {
-        swiperInstance.navigation.destroy();
-      }
+  // Slider 2 refs
+  const prevRef2 = useRef(null);
+  const nextRef2 = useRef(null);
 
-      // Update navigation elements
-      swiperInstance.params.navigation = {
-        prevEl: prevRef.current,
-        nextEl: nextRef.current,
-        disabledClass: 'swiper-button-disabled'
+  const [swiper1, setSwiper1] = useState<SwiperType | null>(null);
+  const [swiper2, setSwiper2] = useState<SwiperType | null>(null);
+
+  // Slider 1 navigation
+  useEffect(() => {
+    if (swiper1 && prevRef1.current && nextRef1.current) {
+      swiper1.params.navigation = {
+        prevEl: prevRef1.current,
+        nextEl: nextRef1.current,
+        disabledClass: 'swiper-button-disabled',
       };
 
-      // Initialize navigation if it exists
-      if (swiperInstance.navigation) {
-        swiperInstance.navigation.init();
-        swiperInstance.navigation.update();
-      }
+      swiper1.navigation.init();
+      swiper1.navigation.update();
     }
-  }, [swiperInstance]);
+  }, [swiper1]);
+
+  // Slider 2 navigation
+  useEffect(() => {
+    if (swiper2 && prevRef2.current && nextRef2.current) {
+      swiper2.params.navigation = {
+        prevEl: prevRef2.current,
+        nextEl: nextRef2.current,
+        disabledClass: 'swiper-button-disabled',
+      };
+
+      swiper2.navigation.init();
+      swiper2.navigation.update();
+    }
+  }, [swiper2]);
 
   return (
     <section className='spaec-60 bglight bg-pattern relative'>
@@ -52,12 +65,14 @@ useEffect(() => {
             <div className='section-title'>
               <h2 className='text-center'>Our Specialized Recipies</h2>
             </div>
+
+            {/* FIRST SLIDER */}
             <div className='sliderspecialties'>
               <Swiper
                 modules={[Navigation]}
                 spaceBetween={25}
                 slidesPerView={2}
-                onSwiper={setSwiperInstance}
+                onSwiper={setSwiper1}
                 breakpoints={{
                   320: { slidesPerView: 1 },
                   640: { slidesPerView: 2 },
@@ -80,7 +95,7 @@ useEffect(() => {
                     desc: 'Hähnchenkeulen mariniert in Joghurt und Tandoori-Gewürzen, im Ofen knusprig gegrillt.',
                     img: '/images/specialized/3.jpg',
                   },
-                   {
+                  {
                     title: 'Chili Fisch',
                     desc: 'Rotbarschfilet mit Paprika, Zwiebeln, Ingwer, Bambus und Knoblauch in scharfer Chilisauce.',
                     img: '/images/specialized/4.jpg',
@@ -97,14 +112,6 @@ useEffect(() => {
                         />
                       </div>
                       <div className='specialties-content'>
-                        {/* <div className='about-us-pattern3'>
-                          <Image
-                            src='/images/flower-path-one.png'
-                            alt='About Us'
-                            width={300}
-                            height={300}
-                          />
-                        </div> */}
                         <div>
                           <h3>{item.title}</h3>
                           <p>{item.desc}</p>
@@ -112,8 +119,7 @@ useEffect(() => {
                             href='/contact'
                             className='button-first btn-main'
                           >
-                            Reserve Table!{' '}
-                            <FontAwesomeIcon icon={faArrowRight} />
+                            Reserve Table! <FontAwesomeIcon icon={faArrowRight} />
                           </Link>
                         </div>
                       </div>
@@ -122,25 +128,24 @@ useEffect(() => {
                 ))}
               </Swiper>
 
-              {/* Custom Prev Button */}
               <div className='slider-nav'>
-                <button ref={prevRef} className='nav-left custom-nav'>
+                <button ref={prevRef1} className='nav-left custom-nav'>
                   <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
 
-                {/* Custom Next Button */}
-                <button ref={nextRef} className='nav-right custom-nav'>
+                <button ref={nextRef1} className='nav-right custom-nav'>
                   <FontAwesomeIcon icon={faChevronRight} />
                 </button>
               </div>
             </div>
 
+            {/* SECOND SLIDER */}
             <div className='sliderspecialties'>
               <Swiper
                 modules={[Navigation]}
                 spaceBetween={25}
                 slidesPerView={2}
-                onSwiper={setSwiperInstance}
+                onSwiper={setSwiper2}
                 breakpoints={{
                   320: { slidesPerView: 1 },
                   640: { slidesPerView: 2 },
@@ -163,7 +168,7 @@ useEffect(() => {
                     desc: 'Zarte Panirstücke in cremigen Spinat mit aromatischen Gewürzen.',
                     img: '/images/specialized/7.jpg',
                   },
-                   {
+                  {
                     title: 'Bhindi Masala',
                     desc: 'Okraschoten mit Ingwer, Knoblauch in einer würzigen Tomaten- und Zwiebelsauce',
                     img: '/images/specialized/8.jpg',
@@ -180,14 +185,6 @@ useEffect(() => {
                         />
                       </div>
                       <div className='specialties-content'>
-                        {/* <div className='about-us-pattern3'>
-                          <Image
-                            src='/images/flower-path-one.png'
-                            alt='About Us'
-                            width={300}
-                            height={300}
-                          />
-                        </div> */}
                         <div>
                           <h3>{item.title}</h3>
                           <p>{item.desc}</p>
@@ -195,8 +192,7 @@ useEffect(() => {
                             href='/contact'
                             className='button-first btn-main'
                           >
-                            Reserve Table!{' '}
-                            <FontAwesomeIcon icon={faArrowRight} />
+                            Reserve Table! <FontAwesomeIcon icon={faArrowRight} />
                           </Link>
                         </div>
                       </div>
@@ -205,18 +201,17 @@ useEffect(() => {
                 ))}
               </Swiper>
 
-              {/* Custom Prev Button */}
               <div className='slider-nav'>
-                <button ref={prevRef} className='nav-left custom-nav'>
+                <button ref={prevRef2} className='nav-left custom-nav'>
                   <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
 
-                {/* Custom Next Button */}
-                <button ref={nextRef} className='nav-right custom-nav'>
+                <button ref={nextRef2} className='nav-right custom-nav'>
                   <FontAwesomeIcon icon={faChevronRight} />
                 </button>
               </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -23,8 +23,8 @@ export default function MenuSection() {
           image: "/images/home-menu/1.jpg",
         },
         {
-          title: "Samosa Chaat",
-          price: "9,90 €",
+          title: "Samosa",
+          price: "6,90 €",
           desc: "zwei Teigtaschen, gefüllt mit Kartoffeln und Erbsen, dazu Channa Chaat mit Zwiebeln",
           image: "/images/home-menu/2.jpg",
         },

@@ -22,14 +22,21 @@ export default function HeroSection() {
     {
       title: "Welcome to Masala Restaurant",
       desc: "Authentic Indian Cuisine in Berlin",
-      img: "/images/homebanner1.jpg",
+      img: "/images/homebanner.jpg",
       mimg: "/images/mobilebanner1.jpg",
     },
     {
-      title: "Welcome to Masala Restaurant",
-      desc: "Authentic Indian Cuisine in Berlin",
-      img: "/images/homebanner.png",
+      title: "Discover Authentic Indian Dishes",
+desc: "Fresh Spices, Traditional Recipes in Berlin",
+      img: "/images/homebanner1.jpg",
       mimg: "/images/mobilebanner2.jpg",
+    },
+    
+    {
+      title: "Experience the Taste of India",
+desc: "Delicious Indian Flavors in the Heart of Berlin",
+      img: "/images/homebanner2.jpg",
+      mimg: "/images/mobilebanner3.jpg",
     },
     // Add more slides if needed
   ];
