@@ -48,7 +48,7 @@ export default function Footer() {
                 what’s going on at our place.
               </p>
               <div className="social-link">
-                <Link href="" target="_blank">
+                <Link href="https://www.facebook.com/profile.php?id=100067880751579" target="_blank">
                   <FontAwesomeIcon icon={faFacebook} />
                 </Link>
                 <Link href="https://www.instagram.com/masala_oberschoeneweide/" target="_blank">
